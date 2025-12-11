@@ -1,0 +1,202 @@
+/* ==============================
+   Matches Page Styles
+   ============================== */
+
+.matches-container {
+    display: grid;
+    gap: 30px;
+}
+
+.match-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.match-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.match-card .team {
+    text-align: center;
+    flex: 1 1 150px;
+}
+
+.match-card .team h3 {
+    color: #0a2f5c;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.match-card .team img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.match-info {
+    text-align: center;
+    flex: 1 1 200px;
+}
+
+.match-info h4 {
+    color: #0a2f5c;
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+.match-info p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.ticket-btn {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #0a2f5c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.ticket-btn:hover {
+    background-color: #ffce00;
+    color: #000;
+}
+
+/* ==============================
+   Header & Navbar
+   ============================== */
+header {
+    background-color: #0a2f5c;
+    color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .header-inner,
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul, .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav a:hover, nav a.active {
+    background-color: #ffce00;
+    color: #000;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+/* ==============================
+   Banner
+   ============================== */
+.banner, .banner-sm {
+    text-align: center;
+    padding: 60px 20px;
+    color: #fff;
+}
+
+.banner {
+    background: url('../images/banner.jpg') center/cover no-repeat;
+}
+
+.banner-sm {
+    background: #0a2f5c;
+}
+
+.banner-sm h2, .banner h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.banner-sm p, .banner p {
+    font-size: 1.2rem;
+}
+
+/* ==============================
+   Sections & Containers
+   ============================== */
+section {
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #0a2f5c;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+
+/* Responsive */
+@media(max-width:768px) {
+    .match-card {
+        flex-direction: column;
+    }
+
+    .match-card .team {
+        flex: 1 1 100%;
+    }
+
+    .match-info {
+        flex: 1 1 100%;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 15px 10px;
+    background-color: #0a2f5c;
+    color: #fff;
+    margin-top: 30px;
+}
